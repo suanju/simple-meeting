@@ -3,6 +3,12 @@ import UnoCSS from 'unocss/vite'
 import { defineConfig, externalizeDepsPlugin } from 'electron-vite'
 import vue from '@vitejs/plugin-vue'
 
+const alias = {
+  '@render': resolve('src/renderer/src'),
+  '@main': resolve('src/main'),
+  '@res': resolve('resources')
+}
+
 export default defineConfig({
   main: {
     plugins: [externalizeDepsPlugin()]
@@ -12,10 +18,8 @@ export default defineConfig({
   },
   renderer: {
     resolve: {
-      alias: {
-        '@renderer': resolve('src/renderer/src')
-      }
+      alias
     },
-    plugins: [vue(),UnoCSS()]
+    plugins: [vue(), UnoCSS()]
   }
 })
