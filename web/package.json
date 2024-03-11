@@ -23,12 +23,13 @@
   "dependencies": {
     "@electron-toolkit/preload": "^3.0.0",
     "@electron-toolkit/utils": "^3.0.0",
-    "electron-drag": "^2.0.0",
     "electron-updater": "^6.1.7"
   },
   "devDependencies": {
     "@electron-toolkit/tsconfig": "^1.0.1",
+    "@iconify-json/system-uicons": "^1.1.12",
     "@types/node": "^18.19.9",
+    "@unocss/preset-icons": "^0.58.5",
     "@vitejs/plugin-vue": "^5.0.3",
     "electron": "^28.2.0",
     "electron-builder": "^24.9.1",

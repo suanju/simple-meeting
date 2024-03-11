@@ -511,7 +511,14 @@
   resolved "https://registry.npmjs.org/@esbuild/win32-x64/-/win32-x64-0.19.12.tgz"
   integrity sha512-T1QyPSDCyMXaO3pzBkF96E8xMkiRYbUEZADd29SyPGabqxMViNoii+NcK7eWJAEoU6RZyEm5lVSIjTmcdoB9HA==
 
-"@iconify/types@^2.0.0":
+"@iconify-json/system-uicons@^1.1.12":
+  version "1.1.12"
+  resolved "https://registry.npmjs.org/@iconify-json/system-uicons/-/system-uicons-1.1.12.tgz#50d016e4ba8d5fa22ca4f3ce2521211bfd818e33"
+  integrity sha512-W3laFVxVNG4qmS8tsSMt2kQMVK+6i1hZOxZTxSaWQWRnmki4qp9rGHnMfRhxBqZ7SQoIrG3toodooK+y4qoBcQ==
+  dependencies:
+    "@iconify/types" "*"
+
+"@iconify/types@*", "@iconify/types@^2.0.0":
   version "2.0.0"
   resolved "https://registry.npmjs.org/@iconify/types/-/types-2.0.0.tgz#ab0e9ea681d6c8a1214f30cd741fe3a20cc57f57"
   integrity sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==
@@ -870,7 +877,7 @@
   dependencies:
     "@unocss/core" "0.58.5"
 
-"@unocss/preset-icons@0.58.5":
+"@unocss/preset-icons@0.58.5", "@unocss/preset-icons@^0.58.5":
   version "0.58.5"
   resolved "https://registry.npmjs.org/@unocss/preset-icons/-/preset-icons-0.58.5.tgz#a3282c3a277b1f4ab888d840a8c63befb8b1c9b9"
   integrity sha512-LDNXavHtWaIvMvBezT9O8yiqHJChVCEfTRO6YFVY0yy+wo5jHiuMh6iKeHVcwbYdn3NqHYmpi7b/hrXPMtODzA==
@@ -1281,13 +1288,6 @@ binary-extensions@^2.0.0:
   version "2.2.0"
   resolved "https://registry.npmjs.org/binary-extensions/-/binary-extensions-2.2.0.tgz#75f502eeaf9ffde42fc98829645be4ea76bd9e2d"
   integrity sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==
-
-bindings@^1.5.0:
-  version "1.5.0"
-  resolved "https://registry.npmjs.org/bindings/-/bindings-1.5.0.tgz#10353c9e945334bc0511a6d90b38fbc7c9c504df"
-  integrity sha512-p2q/t/mhvuOj/UeLlV6566GD/guowlr0hHxClI0W9m7MWYkL1F0hLo+0Aexs9HSPCtR1SXQ0TD3MMKrXZajbiQ==
-  dependencies:
-    file-uri-to-path "1.0.0"
 
 bluebird-lst@^1.0.9:
   version "1.0.9"
@@ -1704,11 +1704,6 @@ dmg-license@^1.0.11:
     smart-buffer "^4.0.2"
     verror "^1.10.0"
 
-dombo@^3.2.0:
-  version "3.2.0"
-  resolved "https://registry.npmjs.org/dombo/-/dombo-3.2.0.tgz"
-  integrity sha512-ITdn9ASkOmSoviZ19NTBpF2HzZfm6B6eYl6a3oHreLJp0BJ9ihQ9O2WaoocI4dk9ZJG8Ulm9XTox4DnmGg3m1g==
-
 dotenv-expand@^5.1.0:
   version "5.1.0"
   resolved "https://registry.npmjs.org/dotenv-expand/-/dotenv-expand-5.1.0.tgz"
@@ -1752,17 +1747,6 @@ electron-builder@^24.9.1:
     read-config-file "6.3.2"
     simple-update-notifier "2.0.0"
     yargs "^17.6.2"
-
-electron-drag@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.npmjs.org/electron-drag/-/electron-drag-2.0.0.tgz"
-  integrity sha512-/9AaqLoZR1JT4MJvWLGA8F4c0GPtUDbMoQ+tPFG4n55PxrvCZu3KkWKKGEjmuUQB/gvN8S+KbHRR0I2nZx7MaA==
-  dependencies:
-    dombo "^3.2.0"
-    try-require "^1.2.1"
-  optionalDependencies:
-    osx-mouse "^2.0.0"
-    win-mouse "^2.0.1"
 
 electron-publish@24.13.1:
   version "24.13.1"
@@ -1980,11 +1964,6 @@ fd-slicer@~1.1.0:
   integrity sha512-cE1qsB/VwyQozZ+q1dGxR8LBYNZeofhEdUNGSMbQD3Gw2lAzX9Zb3uIU6Ebc/Fmyjo9AWWfnn0AUCHqtevs/8g==
   dependencies:
     pend "~1.2.0"
-
-file-uri-to-path@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/file-uri-to-path/-/file-uri-to-path-1.0.0.tgz"
-  integrity sha512-0Zt+s3L7Vf1biwWZ29aARiVYLx7iMGnEUl9x33fbB/j3jR81u/O2LbqK+Bm1CDSNDKVtJ/YjwY7TUd5SkeLQLw==
 
 filelist@^1.0.4:
   version "1.0.4"
@@ -2671,11 +2650,6 @@ muggle-string@^0.3.1:
   resolved "https://registry.npmjs.org/muggle-string/-/muggle-string-0.3.1.tgz"
   integrity sha512-ckmWDJjphvd/FvZawgygcUeQCxzvohjFO5RxTjj4eq8kw359gFF3E1brjfI+viLMxss5JrHTDRHZvu2/tuy0Qg==
 
-nan@^2.14.1:
-  version "2.19.0"
-  resolved "https://registry.npmjs.org/nan/-/nan-2.19.0.tgz#bb58122ad55a6c5bc973303908d5b16cfdd5a8c0"
-  integrity sha512-nO1xXxfh/RWNxfd/XPfbIfFk5vgLsAxUR9y5O0cHMJu/AW9U95JLXqthYHjEp+8gQ5p96K9jUp8nbVOxCdRbtw==
-
 nanoid@^3.3.7:
   version "3.3.7"
   resolved "https://registry.npmjs.org/nanoid/-/nanoid-3.3.7.tgz"
@@ -2740,14 +2714,6 @@ onetime@^5.1.2:
   integrity sha512-kbpaSSGJTWdAY5KPVeMOKXSrPtr8C8C7wodJbcsd51jRnmD+GZu8Y0VoU6Dm5Z4vWr0Ig/1NKuWRKf7j5aaYSg==
   dependencies:
     mimic-fn "^2.1.0"
-
-osx-mouse@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.npmjs.org/osx-mouse/-/osx-mouse-2.0.0.tgz#d7b07e8570118680e7c763057c5da92550be9c7e"
-  integrity sha512-7RGBcHCLbaCDGBzC3GvOYFDaw3zuiYwhsDJKULQEljhwhAgCArx5lHMZztzzb4jUyMWPRFDUeTi7RVtGi68b9A==
-  dependencies:
-    bindings "^1.5.0"
-    nan "^2.14.1"
 
 p-cancelable@^2.0.0:
   version "2.1.1"
@@ -3216,11 +3182,6 @@ truncate-utf8-bytes@^1.0.0:
   dependencies:
     utf8-byte-length "^1.0.1"
 
-try-require@^1.2.1:
-  version "1.2.1"
-  resolved "https://registry.npmjs.org/try-require/-/try-require-1.2.1.tgz"
-  integrity sha512-aMzrGUIA/R2LwUgvsOusx+GTy8ERyNjpBzbWgS1Qx4oTFlXCMxY3PyyXbPE1pvrvK/CXpO+BBREEqrTkNroC+A==
-
 type-fest@^0.13.1:
   version "0.13.1"
   resolved "https://registry.npmjs.org/type-fest/-/type-fest-0.13.1.tgz"
@@ -3361,14 +3322,6 @@ which@^2.0.1:
   integrity sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==
   dependencies:
     isexe "^2.0.0"
-
-win-mouse@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.npmjs.org/win-mouse/-/win-mouse-2.0.1.tgz#89894a8615078dbdd39a5dbf813523093ca7834d"
-  integrity sha512-cSDvzeMMcE8v+TdeT8NfWgz1h4v1dd4M5WgGqbjyb2SXKI/la/X/ZdkgeC9hQd1MtSVSuHbmO/JC+aeaDS75LA==
-  dependencies:
-    bindings "^1.5.0"
-    nan "^2.14.1"
 
 "wrap-ansi-cjs@npm:wrap-ansi@^7.0.0", wrap-ansi@^7.0.0:
   version "7.0.0"

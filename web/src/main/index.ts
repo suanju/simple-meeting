@@ -1,7 +1,6 @@
 import { app, shell, BrowserWindow, ipcMain } from 'electron'
 import { join } from 'path'
 import { electronApp, optimizer, is } from '@electron-toolkit/utils'
-import drag  from 'electron-drag'
 import icon from '../../resources/icon.png?asset'
 
 function createWindow(): void {
@@ -19,7 +18,7 @@ function createWindow(): void {
     }
   })
 
-  drag(mainWindow);
+
 
   mainWindow.on('ready-to-show', () => {
     mainWindow.show()

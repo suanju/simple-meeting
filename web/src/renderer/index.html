@@ -9,9 +9,17 @@
       content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:"
     />
   </head>
-
-  <body style="-webkit-app-region: drag">
+  <body>
     <div id="app"></div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
+
+<style>
+  body{
+    -webkit-app-region: drag
+  }
+  button {
+  -webkit-app-region: no-drag;
+}
+</style>
