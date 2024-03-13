@@ -4,7 +4,8 @@
         <div class="h-8  w-full flex flex-row-reverse" style="-webkit-app-region: drag;">
             <div class="i-system-uicons-cross h-6 w-6 bg-gray-500 m-2" style="-webkit-app-region: no-drag;"
                 @click="cross"></div>
-            <div class="i-system-uicons-minus h-6 w-6 bg-gray-500 m-2" style="-webkit-app-region: no-drag;"></div>
+            <div class="i-system-uicons-minus h-6 w-6 bg-gray-500 m-2" style="-webkit-app-region: no-drag;"
+                @click="minus"></div>
         </div>
         <div class="bg-white py-16 sm:py-18">
             <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
@@ -20,7 +21,7 @@
                         officia in nulla. Id proident tempor incididunt nostrud nulla et culpa.</p>
                     <form class="mx-auto mt-10 flex max-w-md gap-x-4">
                         <label for="email-address" class="sr-only">Email address</label>
-                        <input id="email-address" name="email" type="email" autocomplete="email" required=""
+                        <input id="email-address" name="email" type="email" autocomplete="email" required
                             class="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-white sm:text-sm sm:leading-6"
                             placeholder="Enter your email" />
                         <button type="submit"
@@ -50,8 +51,9 @@
 <script lang="ts" setup>
 console.log(window.electron)
 const cross = () => {
-    console.log(123)
-    console.log(window.electron);
-
+    window.electron.ipcRenderer.send("close")
+}
+const minus = () => {
+    window.electron.ipcRenderer.send("minimize")
 }
 </script>
